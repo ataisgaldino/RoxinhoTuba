@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>  
+    
+     
+      <p class="descriçao">🌟 Bem-vindo ao Roxinho Tuba! 🌟
+     
+        Olá! Somos a Roxinho Tuba, uma empresa apaixonada por oferecer o melhor açaí da região. Nossa missão é proporcionar uma experiência única e saborosa, com produtos frescos, naturais e de alta qualidade.
+        
+        Aqui, você encontra uma variedade de opções para saborear essa delícia, desde tigelas incríveis até opções de acompanhamento irresistíveis. Venha nos conhecer e descubra por que somos a escolha certa para os amantes de açaí!
+        
+        Aproveite e faça seu pedido! 🥥🍓✨</p>
+       <div>
+        <img src="açaiteria.webp">
+       </div>
+        
+       
+        <link rel="stylesheet" href="açai.css">
+    </head> 
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Produtos - Açaíteria</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <header>
+          <h1>ROXINHO TUBA</h1>
+          <nav>
+              <ul>
+                 <li><a href="açai2.html" >Contato</a></li>
+               
+              </ul>
+          </nav>
+      </header>
+  
+      <main>
+          <h2>Nossos Produtos</h2>
+          <div class="produto">
+            <h3>Açaí Tradicional</h3>
+            <p>Delicioso açaí batido com água. Tamanho: 300ml. Preço: R$ 10,00</p>
+            <button class="Comprar" data-produto="acaí_tradicional.html">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Açaí com Granola</h3>
+            <p>Açaí batido com granola crocante. Tamanho: 300ml. Preço: R$ 12,00</p>
+            <button class="Comprar" data-produto="acaí_granola.html">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Açaí com Frutas</h3>
+            <p>Açaí batido com frutas frescas. Tamanho: 300ml. Preço: R$ 15,00</p>
+            <button class="Comprar" data-produto="acaí_frutas.html">Comprar</button>
+        </div>
+        
+      </main>
+  
+      <footer>
+          <p>&copy; 2024 Roxinho Tuba - Todos os direitos reservados.</p>
+      </footer>
+  </body>
+  <div>
+   
+
+    <script>
+        const comprarButtons = document.querySelectorAll('Comprar');
+comprarButtons.forEach(button => {
+    button.onclick = function() {
+        const produto = this.getAttribute('data-produto');
+        window.location.href = produto;
+    };
+});
+
+     </script>
+
+     </div>
+     </html> <!--FECHAR-->
